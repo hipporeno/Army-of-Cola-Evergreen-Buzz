@@ -43,6 +43,12 @@ SetStageMessageIndex(15);
 		SetCondTime( 10000 );
 	CloseCondition();
 	SetStageTime(95);
+	AddCondition("timeout");
+		//SetHitNRun();
+	AddCondition( "damage" );
+		SetCondMinHealth( 0.0 );
+		SetCondTargetVehicle( "current" );
+	CloseCondition();
 CloseStage();
 
 AddStage();
@@ -57,16 +63,30 @@ SetStageMessageIndex(14);
 	AddCondition("timeout");
 		//SetHitNRun();
 	CloseCondition();
+	AddCondition( "damage" );
+		SetCondMinHealth( 0.0 );
+		SetCondTargetVehicle( "current" );
+	CloseCondition();
 	StageStartMusicEvent("M3_drama");
 	ShowStageComplete();
 CloseStage();
 
 AddStage();
+	SetHUDIcon("ralph");
 	SetStageMessageIndex(16);
 	AddObjective("goto");
 		SetDestination("m3_nelsonhouse","carsphere");
 	CloseObjective();
+	AddCondition( "damage" );
+		SetCondMinHealth( 0.0 );
+		SetCondTargetVehicle( "current" );
+	CloseCondition();
+	AddCondition("outofvehicle");
+		SetCondTime( 10000 );
+	CloseCondititon();
 	SetStageTime(75);
+	AddCondition("timeout");
+		//SetHitNRun();
 CloseStage();
 
 AddStage("final"); // gets Lisa out of the Car and hides the car

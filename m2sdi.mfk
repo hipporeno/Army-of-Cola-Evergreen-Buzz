@@ -24,6 +24,7 @@ CloseStage();
 
 AddStage(3);
 	SetHUDIcon("skinner");
+	SetStageMessageIndex(21);
 	AddObjective("talkto");
 		AddNPC( "skinner", "m2_skinner_fatlol_1" );
 		SetTalkToTarget("skinner", 0, 0);

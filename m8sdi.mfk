@@ -5,7 +5,7 @@ ShowHUD( "false" );
 AddStage(2);
     AddObjective("timer");
         SetDurationTime(2);
-        SetGameOver();
+        //SetGameOver();
     CloseObjective();
 CloseStage();
  

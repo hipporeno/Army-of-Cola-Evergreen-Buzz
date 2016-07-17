@@ -27,6 +27,7 @@ CloseStage();
 
 AddStage();
 SetStageMessageIndex(23);
+SetHUDIcon("apu_v");
 	AddObjective("losetail");
 	ActivateVehicle("scorp_v","NULL","chase");
 		SetObjTargetVehicle("scorp_v");
@@ -42,6 +43,7 @@ CloseStage();
 
 AddStage();
 SetStageMessageIndex(21);
+SetHUDIcon("lenny");
 	AddObjective("goto");
 		SetDestination("m1_dropoff","carsphere");
 	CloseObjective();
@@ -135,7 +137,7 @@ CloseStage();
 
 AddStage("final");
 SetHUDIcon("simpsons");
-SetStageMessageIndex(23);
+SetStageMessageIndex(24);
 	AddObjective("goto");
 		SetDestination("m6_simpsonhouse","triggersphere");
 	CloseObjective();

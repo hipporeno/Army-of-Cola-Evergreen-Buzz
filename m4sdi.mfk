@@ -6,7 +6,7 @@ SetDynaLoadData("l4z7.p3d;l4r6.p3d;l4r7.p3d;");
 UsePedGroup(6);
 
 AddStage();
-	SetStageMessageIndex(08);
+	SetStageMessageIndex(14);
 	AddObjective("goto");
 		SetDestination("m3_nelsonhouse","triggersphere");
 		AddNPC( "nelson", "m3_nelsontalk" );
